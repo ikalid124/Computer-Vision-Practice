@@ -1,0 +1,33 @@
+Open CV functions and what they do 
+
+Var = cv2.imread("xx.jpg") -> reads image and stores in val
+assert Var is not None, "file could not be read, check with os.path.exists()" -> file doesnt exist check
+
+cv2.imwrite("xxx.jpg", Var) -> spits out image
+
+cv2.imshow("xx", Var) -> opens image in a new tab
+cv2.waitKey(0) -> stops ^ the img from immediately closing
+
+cv2.VideoCapture(video_path / "xxx.mp4" / webcam number to acces)
+
+cv2.resize(imgname, (widht, length))
+image_crop = image[xx:xx, xx:xx] -> not a function but to crop an interval
+
+video.release() - > closes video and frees resources
+cv.DestroyAllWindows() -> closes all video or image deslpalys that were opened with .imshow
+
+COLOR SPACES
+
+cv2.cvtColor(img, cv2.COLOR_BGR2GRAY) -> function convers image to gray scale from BGR
+cv2.cvtColor(img, cv2.COLOR_BGR2RGB) -> function convers image to RGB from BGR
+cv2.cvtColor(img, cv2.COLOR_BGR2HSV) -> function convers image to HSV from BGR
+https://docs.opencv.org/3.4/d8/d01/group__imgproc__color__conversions.html -> list of all
+
+import os -> allows you to grab pictures and videos from a folder
+
+BLUR
+cv2.blur(imgname, (x,y)) -> Averaging blur
+cv2.GaussianBlur(imgname, (x,y), z) -> more natural/soft blur?
+cv2.medianBlur(imgname, x)  -> great for removing noise
+video_path / image_path = os.path.join('.','foldername','filename')
+
