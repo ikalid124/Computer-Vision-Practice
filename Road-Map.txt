@@ -1,0 +1,62 @@
+Big Idea 
+1. Start with Opencv and simple python image projects
+2. Transition to Pytorch and TensorFlow
+3. Build an object detector or maybe a SaaS Ai image tool
+
+
+Phase 1( Foundation)(Python + numpy + opencv)
+Image = matrix
+
+- How images are stored (arrays, pixels, RGB) ✓ 
+- Grayscale vs color ✓ 
+- Basic operations:
+    -Resize✓ , crop✓ , rotate✓ 
+- Convolution (VERY important)
+- Filters:
+    - Blur (Gaussian)✓ 
+    - Sharpen✓ 
+
+
+Phase 2(Core Computer Vision)
+- Learn:
+    - Edge detection:
+        - Sobel
+        - Canny 
+- Thresholding (binary images)
+- Contours (shape detection)
+- Morphological ops:
+    - Erode / Dilate
+
+- Poteintial Build:
+    - Edge detector app
+    - Shape detector (circle, rectangle)
+    - Document scanner (like CamScanner)
+
+Phase 3(Feature Detection & Tracking)
+- Learn:
+    Keypoints & descriptors:
+        ORB / SIFT
+- Feature matching between images
+- Optical flow (tracking movement)
+
+- Poteintial Build:
+Image matcher (are two images similar?)
+Simple motion tracker (video)
+
+Phase 4(Deep Learning for Vision)
+
+- Learn:
+    Basics of neural networks
+    CNNs (core concept)
+    - Framework:
+        PyTorch
+- Tasks:
+    Image classification (cats vs dogs)
+    Object detection (YOLO)
+
+
+
+Phase 5(advanced)
+- Image segmentation
+- Depth estimation
+- 3D vision / SLAM

@@ -10,9 +10,12 @@ cv2.waitKey(0) -> stops ^ the img from immediately closing
 
 cv2.VideoCapture(video_path / "xxx.mp4" / webcam number to acces)
 
+SIZING AND CROP
+cv2.rotate(image, flag(cv2.ROTATE_90_CLOCKWISE))
 cv2.resize(imgname, (widht, length))
 image_crop = image[xx:xx, xx:xx] -> not a function but to crop an interval
 
+RELEASING MEMMORY
 video.release() - > closes video and frees resources
 cv.DestroyAllWindows() -> closes all video or image deslpalys that were opened with .imshow
 
@@ -31,3 +34,42 @@ cv2.GaussianBlur(imgname, (x,y), z) -> more natural/soft blur?
 cv2.medianBlur(imgname, x)  -> great for removing noise
 video_path / image_path = os.path.join('.','foldername','filename')
 
+THRESHOLDING -> Converts image into binary(0 and 1 / balck and white) image setting pixels above a chosen value to one color and below it to another.
+cv.treshold(imgname,(threshold val),255,thresholdtype)
+thresholdtypes -> cv2.THRESH_BINARY
+
+
+EDGE DETECTORS
+Sobel Derivatives:
+Laplace Operator:
+Canny Edge detector: cv2.Canny(img, value(100), value(200))
+cv2.dilate(image, kernel) -> makes lines thicker
+cv2.erode(image, kernel) -> shrinks / thins lines
+
+
+Drawing:
+cv2.line(img, (x,y)(starting point) , (x,y)(ending point), (r,g,b), thickness)
+cv2.rectangle(img, (x,y)(top-left corner), (x,y)(bottom-right corner), (r,g,b), thickness)
+cv2.circle(img, (x,y)(center), radius, (r,g,b), thickness)
+cv2.putText(img, "text", (x,y)(bottom-left of text), font, fontScale, (r,g,b), thickness)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Notes to remember
+
+Threshholding means Converting the many colors into a binary
